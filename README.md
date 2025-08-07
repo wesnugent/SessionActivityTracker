@@ -18,6 +18,11 @@ dotnet add package SessionActivityTracker
 
 ### 2. Configure Services in `Startup.cs` or `Program.cs`:
 ```csharp
+using SessionActivityTracker;
+using SessionActivityTracker.Extensions;
+
+// ... other services
+
 builder.Services.AddDistributedMemoryCache(); // Or Redis/SQL distributed cache
 builder.Services.AddSession();
 

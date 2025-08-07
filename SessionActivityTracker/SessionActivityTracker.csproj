@@ -2,13 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<Version>0.0.1</Version>
-	<AssemblyVersion>0.0.1</AssemblyVersion>
-	<FileVersion>0.0.0.1</FileVersion>
+	<PackageId>SessionActivityTracker</PackageId>
+	<Version>1.0.0</Version>
+	<AssemblyVersion>1.0.0</AssemblyVersion>
+	<FileVersion>1.0.0.0</FileVersion>
 	<Authors>Wesley Nugent</Authors>
-	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<Description>A lightweight ASP.NET Core middleware and controller combo that tracks user activity enabling you to monitor and manage session timeouts effectively.</Description>
+	<PackageTags>session tracking;aspnetcore;middleware;timeout;session</PackageTags>
+	<PackageProjectUrl>https://github.com/wesnugent/SessionActivityTracker</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/wesnugent/SessionActivityTracker</RepositoryUrl>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +23,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+
+	<None Include="..\README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
